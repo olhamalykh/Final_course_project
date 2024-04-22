@@ -76,7 +76,7 @@ a:visited {
 }
 
 .visual_content {
-  background-image: url(/img/banner.jpg);
+  background-image: url(img/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px; 
