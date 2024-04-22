@@ -51,10 +51,20 @@ a {
   align-items: center;
 }
 
+.nav_list img:hover {
+  transform: scale(1.2); 
+  transition: transform 0.3s ease; 
+}
+
 .nav_icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.nav_icons img:hover {
+  transform: scale(1.5); 
+  transition: transform 0.3s ease; 
 }
 
 .nav_list a {
@@ -193,6 +203,11 @@ h1~p {
   height: 214px;
   margin-right: 24px;
     position: relative;
+}
+
+.product img:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
 }
 
 .new {
@@ -487,6 +502,11 @@ h1~p {
   height: 133px;
 }
 
+.category img:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+}
+
 
 
 
@@ -651,6 +671,11 @@ footer {
   gap: 16px;
 }
 
+.footer_icons img:hover {
+  transform: scale(1.5); 
+  transition: transform 0.3s ease; 
+}
+
 .footer_links {
   display: flex;
   justify-content: end;
@@ -690,6 +715,7 @@ footer {
   display: flex;
   gap: 40px;
 }
+
 
 
 
