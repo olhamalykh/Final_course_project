@@ -808,7 +808,7 @@ footer {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .modal-content {
@@ -858,14 +858,14 @@ footer {
 
 h1 {
   font-family: var(--font-family);
-  font-size: 3em;
+  font-size: 3.8em;
   font-weight: 400;
   color: #3C4043;
   letter-spacing: 0.04em;
   line-height: 119%;
   display: flex;
   position: absolute;
-  top: 80px;
+  top: 30px;
   left: 50px;
   width: 200px;
   margin: 0;
@@ -873,13 +873,13 @@ h1 {
 
 h1~p {
   font-family: var(--font-family);
-  font-size: 0.9em;
+  font-size: 1.2em;
   font-weight: 400;
   line-height: 150%;
   color: #3C4043;
   display: flex;
   position: absolute;
-  top: 280px;
+  top: 240px;
   left: 50px;
   height: 48px;
   width: 130px;
@@ -893,11 +893,11 @@ h1~p {
   align-items: center;
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 150%;
   text-align: center;
   color: #3c4043;
-  background-color:#cadefb;
+  background-color: #d8f2ef;
   position: absolute;
 
   border: #a3c4f3 2px solid;
@@ -1010,21 +1010,10 @@ h1~p {
 
 
 .section_4 {
-  /* height: 100%; */
   height: fit-content;
-
-  /* width: fit-content; */
   width: 100%;
-
-
-
   display: flex;
-
-
   flex-wrap: wrap;
-  /* flex-wrap: nowrap; */
-
-
   justify-content: center;
 }
 
@@ -1254,8 +1243,6 @@ footer {
 }
 
 
-
-
 }
 
 
@@ -1266,7 +1253,7 @@ footer {
 /* Landscape */
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-  
+ 
 .visual_content::before {
   content: '';
   position: absolute;
@@ -1276,7 +1263,25 @@ footer {
   height: 100%;
   background-image: url(img/banner.jpg);
   background-size: cover;
-  background-position: right;
+}
+
+h1 {
+  top: 15px;
+}
+
+h1~p {
+  top: 60px;
+  left: 300px;
+  width: 200px;
+  text-align: center;
+}
+
+.browse_deals_btn {
+  top: 310px;
+}
+
+.browse_guide_btn {
+  top: 400px;
 }
 
 .modal-content {
