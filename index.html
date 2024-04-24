@@ -16,13 +16,12 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet"
         />
+      
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">     -->
     </head>
     <body>
 
-        <!-- 1 секція -->
-
-        <section class="visual">
-            <div class="first_line">
+         <div class="first_line">
                 <p>
                 Free shipping. Simple returns. Holiday shopping has never been easier. Shop now.
                 </p>
@@ -30,8 +29,8 @@
 
             <div class="navbar">
                 <nav class="nav_list">
-                    <a href="#">
-                        <img src="img/Frame_google.png" alt="">
+                    <a href="https://www.google.com/" target="blank">
+                        <img src="img/Frame_google.png" alt="Google">
                     </a>
                     <a href="#4">Phones</a>
                     <a href="#1">Earbuds</a>
@@ -41,9 +40,28 @@
                     <a href="#6">Accessories</a>
                     <a href="#7">Subscriptions</a>
                     <a href="#8">Offers</a>
-                </nav>        
+                </nav>      
+                
+                <!-- Burger menu -->
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn">&times;</span>
+                        <a href="#4">Phones</a>
+                        <a href="#1">Earbuds</a>
+                        <a href="#2">Watches</a>
+                        <a href="#3">Smart Home</a>
+                        <a href="#5">Laptops</a>
+                        <a href="#6">Accessories</a>
+                        <a href="#7">Subscriptions</a>
+                        <a href="#8">Offers</a>
+                    </div>
+                </div>
 
                 <nav class="nav_icons">
+                    <a class="google_adaptive" href="https://www.google.com/" target="blank">
+                        <img src="img/Frame_google.png" alt="Google">
+                    </a>
                     <a href="#">
                         <img src="img/Frame_search.png" alt="">
                     </a>
@@ -56,8 +74,22 @@
                     <a href="#">
                         <img src="img/Frame_user.png" alt="">
                     </a>
+
+                    <!-- Burger menu button -->
+                    <button class="burger-menu-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                    </button>
                 </nav>
             </div>
+
+
+
+
+
+        <!-- 1 секція -->
+
+        <section class="visual">
+           
             
             <div class="visual_content">
                 <h1>Inhale. Gift⁠. Exhale.</h1>
@@ -412,6 +444,7 @@
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
 
