@@ -756,9 +756,10 @@ footer {
 
   .navbar {
     flex-direction: column; 
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    padding: 0;   
+    /* padding: 0;    */
+    padding-left: 30px;
   }
 
   .nav_list {
@@ -784,7 +785,7 @@ footer {
   /* Burger menu */
 
 .burger-menu-btn {
-  display: block;
+  display: flex;
   border: 2px solid;
   border-radius: 50%;
   height: 23px;
@@ -948,8 +949,8 @@ h1~p {
   padding-top: 500px;
   background-color: #f8f9fa;
   display:contents;
-  justify-content: center;
   flex-wrap: wrap;
+  gap: 15px;
 }
 
 .google_pixel_div {
@@ -983,11 +984,20 @@ h1~p {
   text-align: center;
 }
 
+.google_pixel_div div {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: fit-content;
+  margin: 0;
+}
+
 .google_pixel_div a {
   font-size: 1.2em;
   border: #1967D2 3px solid;
   border-radius: 5%;
   padding: 5px;
+  margin: 0;
 }
 
 .google_pixel_div a:active {
@@ -1000,10 +1010,21 @@ h1~p {
 
 
 .section_4 {
-  height: 100%;
+  /* height: 100%; */
+  height: fit-content;
+
+  /* width: fit-content; */
   width: 100%;
+
+
+
   display: flex;
+
+
   flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
+
+
   justify-content: center;
 }
 
@@ -1165,6 +1186,10 @@ h1~p {
   height: auto;
 }
 
+.section_8_div {
+  padding-bottom: 30px;
+}
+
 .section_8_div h4 {
   margin-top: 50px;
   margin-bottom: 20px;
@@ -1179,6 +1204,10 @@ h1~p {
   margin-left: 10px;
 }
 
+.section_8_div div {
+  margin-left: 30px;
+}
+
 .section_8_div a {
   font-size: 1.3em;
 }
@@ -1187,6 +1216,42 @@ h1~p {
   border: 3px solid #3c4043;
 }
 
+
+
+
+footer {
+  height: fit-content;
+  justify-content: start;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  gap: 30px;
+}
+
+.footer_icons {
+  flex-direction: column;
+}
+
+.footer_icons img:active {
+  transform: scale(1.5); 
+  transition: transform 0.3s ease; 
+}
+
+.footer_links {
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+}
+
+.footer_links_div {
+  flex-direction: column;
+  justify-content: start;
+  gap: 16px;
+}
+
+.footer_links a:active {
+  text-decoration: underline;
+}
 
 
 
@@ -1212,6 +1277,11 @@ h1~p {
   background-image: url(img/banner.jpg);
   background-size: cover;
   background-position: right;
+}
+
+.modal-content {
+    margin: 10px auto ;
+    width: 50%;
 }
 
 .google_pixel {
@@ -1265,7 +1335,6 @@ h1~p {
 .section_8 {
   flex-wrap: nowrap;
 }
-
 
 
 
