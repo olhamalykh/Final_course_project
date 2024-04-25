@@ -30,11 +30,9 @@ body * {
 }
 
 .navbar {
-
   position: sticky;
   top: 0;
   z-index: 1000;
-
   height: 56px;
   width: 100%;
   background-color: #FFFFFF;
@@ -101,6 +99,8 @@ a {
 a:visited {
   color: #0f8178;
 }
+
+/* 1 секція */
 
 .visual_content {
   background-image: url(img/banner.jpg);
@@ -183,8 +183,7 @@ h1~p {
 }
 
 
-
-
+/* 2 секція */
 
 .products {
   background-color: #fff;
@@ -254,8 +253,7 @@ h1~p {
 }
 
 
-
-
+/* 3 секція */
 
 .google_pixel {
   height: 616px;
@@ -308,8 +306,7 @@ h1~p {
 }
 
 
-
-
+/* 4 секція */
 
 .section_4 {
   height: 692px;
@@ -382,8 +379,7 @@ h1~p {
 }
 
 
-
-
+/* 5 секція */
 
 .section_5 {
   height: 733px;
@@ -462,8 +458,7 @@ h1~p {
 }
 
 
-
-
+/* 6 секція */
 
 .shop_category {
   height: 270px;
@@ -526,8 +521,7 @@ h1~p {
 }
 
 
-
-
+/* 7 секція */
 
 .explore {
   height: 733px;
@@ -610,8 +604,7 @@ h1~p {
 }
 
 
-
-
+/* 8 секція */
 
 .section_8 {
   display: flex;
@@ -669,8 +662,7 @@ h1~p {
 }
 
 
-
-
+/* Footer */
 
 footer {
   height: 50px;
@@ -739,109 +731,111 @@ footer {
 
 
 
-/* Адаптив */
+/* Adaptive */
 
 @media screen and (max-width: 768px) {
-  body {
-    font-size: 0.8em;
+body {
+  font-size: 0.8em;
   }
 
-  .visual {
-    height: 600px;
+.visual {
+  height: 600px;
   }
 
-  .first_line {
+.first_line {
   text-align: center;
-  }
+}
 
-  .navbar {
-    flex-direction: column; 
-    align-items: start;
-    justify-content: center;
-    /* padding: 0;    */
-    padding-left: 30px;
-  }
+.first_line p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
-  .nav_list {
-    display: none;
-  }
+.navbar {
+  flex-direction: column; 
+  align-items: start;
+  justify-content: center;
+  padding-left: 30px;
+}
 
-  .nav_icons {
-    margin-top: 5px; 
-    justify-content: center;
-    
-    flex-wrap: wrap;
-  }
+.nav_list {
+  display: none;
+}
 
-  .nav_icons a {
-    padding: 0; 
-    font-size: 0.9em; 
-  }
+.nav_icons {
+  margin-top: 5px; 
+  justify-content: center; 
+  flex-wrap: wrap;
+}
 
-  .google_adaptive {
-    display: block;
-  }
+.nav_icons a {
+  padding: 0; 
+  font-size: 0.9em; 
+}
+
+.google_adaptive {
+  display: block;
+}
 
   /* Burger menu */
 
 .burger-menu-btn {
   display: flex;
-  border: 2px solid;
+  border: 0px #fff;
   border-radius: 50%;
   height: 23px;
   width: 23px;
-  font-size: 18px;
   cursor: pointer;
 }
 
 .burger-menu-btn:hover {
-  transform: scale(1.5); 
+  transform: scale(1.2);
   transition: transform 0.3s ease; 
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.7);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 4px solid #697e90;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 4px solid #697e90;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .close-btn {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close-btn:hover,
 .close-btn:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/* Visual content */
+/* Visual content adaptive*/
 
 .visual_content { 
-    height: 600px; 
+  height: 600px; 
 }
 
 .visual_content::before {
@@ -899,7 +893,6 @@ h1~p {
   color: #3c4043;
   background-color: #d8f2ef;
   position: absolute;
-
   border: #a3c4f3 2px solid;
   border-radius: 4px;
 }
@@ -919,8 +912,7 @@ h1~p {
   background-color: rgb(248, 200, 224);
 }
 
-
-/* Products */
+/* Products adaptive*/
 
 .products {
   padding-top: 0;
@@ -939,8 +931,7 @@ h1~p {
   height: 360px;
 }
 
-
-/* Google pixel */
+/* Google pixel adaptive*/
 
 .google_pixel {
   height: 616px;
@@ -1004,10 +995,7 @@ h1~p {
   background-color: #86a6e6;
 }
 
-
-
-
-
+/* Section_4 adaptive */
 
 .section_4 {
   height: fit-content;
@@ -1043,7 +1031,7 @@ h1~p {
   border: 3px solid #5f6368;
 }
 
-
+/* Section_5 adaptive */
 
 .section_5 {
   height: 100%;
@@ -1080,7 +1068,7 @@ h1~p {
 }
 
 
-
+/* Shop_category adaptive */
 
 .shop_category {
   height: 100%;
@@ -1115,12 +1103,7 @@ h1~p {
   transition: transform 0.3s ease; 
 }
 
-
-
-
-
-
-
+/* Explore adaptive */
 
 .explore {
   height: 100%;
@@ -1159,7 +1142,7 @@ h1~p {
   margin-top: 88px;
 }
 
-
+/* Section_8 adaptive */
 
 .section_8 {
   flex-wrap: wrap;
@@ -1205,8 +1188,7 @@ h1~p {
   border: 3px solid #3c4043;
 }
 
-
-
+/* Footer adaptive */
 
 footer {
   height: fit-content;
@@ -1242,15 +1224,11 @@ footer {
   text-decoration: underline;
 }
 
-
 }
 
 
 
-
-
-
-/* Landscape */
+/* Landscape adaptive */
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
  
@@ -1285,12 +1263,15 @@ h1~p {
 }
 
 .modal-content {
-    margin: 10px auto ;
-    width: 50%;
+  margin: 10px auto ;
+   width: 50%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
 }
 
 .google_pixel {
-  height: 320px;
+  height: 370px;
   width: auto;
   margin: 0;
   padding-top: 0;
@@ -1299,6 +1280,10 @@ h1~p {
   display: flex;
   justify-content: center;
   flex-wrap:nowrap;
+}
+
+.google_pixel_div {
+  height: 362px;
 }
 
 .google_pixel_div h2 { 
@@ -1327,11 +1312,64 @@ h1~p {
   background-color: #86a6e6;
 }
 
-
 .section_4_div {
   width: auto;
 }
 
+.section_4_div {
+  height: 250px;
+  width: 100%;
+}
+
+.section_4_div p { 
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+.section_4_div h3 {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.section_4_div a {
+  font-size: 1.1em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100px;
+  height: 30px;
+}
+
+.section_4_div img {
+  width: auto;
+  height:120px;
+  object-fit: contain;
+}
+
+.section_5_div {
+  width: 100%;
+}
+
+.section_5_div p {
+  font-size: 0.9em;
+}
+
+.section_5_div h3 {
+  font-size: 1.9em;
+}
+
+.section_5_div a {
+  font-size: 1.5em;
+  width: 150px;
+  height: 35px;
+}
+
+.section_5_div img {
+  width: 100%;
+}
+
+.section_5_div a:active {
+  border: 3px solid #5f6368;
+}
 
 .explore {
   flex-wrap: nowrap;
@@ -1341,16 +1379,7 @@ h1~p {
   flex-wrap: nowrap;
 }
 
-
-
-
-
-
-
 }
-
-
-
 
 
 
