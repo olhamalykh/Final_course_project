@@ -13,6 +13,10 @@ body * {
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .visual {
   position: relative;
   height: 710px;
