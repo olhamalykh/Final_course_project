@@ -781,14 +781,17 @@ body {
 
 .burger-menu-btn {
   display: flex;
-  border: 0px #fff;
   border-radius: 50%;
   height: 23px;
   width: 23px;
   cursor: pointer;
+  background-image: url('img/bars_black.png');
+  background-size: cover;
+  background-position: center;
+  border: none; 
 }
 
-.burger-menu-btn:hover {
+.burger-menu-btn:active {
   transform: scale(1.2);
   transition: transform 0.3s ease; 
 }
